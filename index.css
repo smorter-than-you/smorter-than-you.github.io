@@ -4,13 +4,13 @@
 
 .download-button {
   color: #EEE;
-  background-color: #E12;
+  background-color: #21E;
   font-size: 20px;
   border-thickness: 5px;
-  border-color: #E00810;
-  border-radius: 5px;
-  width: 150px;
-  height: 40px;
+  border-color: #1008E0;
+  border-radius: 20px;
+  width: 300px;
+  height: 100px;
 }
 
 #titleheader {
