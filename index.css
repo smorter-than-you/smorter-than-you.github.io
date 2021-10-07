@@ -1,3 +1,18 @@
 * {
   text-align: center;
 }
+
+.download-button {
+  color: #EEE;
+  background-color: #E12;
+  font-size: 20px;
+  border-thickness: 5px;
+  border-color: #E00810;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+}
+
+#titleheader {
+  color: red;
+}
