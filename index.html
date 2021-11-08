@@ -4,15 +4,10 @@
   <link href="mainstyle.css" rel="stylesheet">
   </head>
   <body>
-    <script>
-      while(true) {
-        document.getElementById("date").innerHTML = Date();
-      }
-    </script>
     <div id="wrapper">
     </div>
     <h1 class="mainheader">smorter-than-you's github pages</h1>
-    <p id=date>Getting date...</p>
+    <p id=date onload="this.innerHTML = Date();>Getting date...</p>
     <a class="projectheader" href="https://smorter-than-you.github.io/social-credit" target="_blank"><h2>Free social credit</h2></a>
       <p class="projectdescription">
   </body>
