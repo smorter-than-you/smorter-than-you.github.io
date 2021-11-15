@@ -5,10 +5,24 @@
   </head>
   <body>
     <script>
-      function boomerize() {
-        document.getElementById("maybeboomer").innerHTML = "Ludvig är en boomer";
+      let iteration = 0;
+      function boomerize(const thing) {
+        switch(thing)
+          case 0:
+            document.getElementById("maybeludvig").innerHTML = "Ludvig är en boomer";
+            break;
+          case 1:
+            document.getElementById("maybeelias").innerHTML = "Elias har en stor panna";
+            break;
+          case 2:
+            document.getElementById("maybetore").innerHTML = "Tore är en snögubbe";
+            break;
+          default:
+            alert("Du är färdig nu. Fortsätt om du vill");
       }
     </script>
-    <img src="https://github.com/smorter-than-you/smorter-than-you.github.io/blob/main/bad-game/turtol.jpg?raw=true" onclick="boomerize();">
-    <p id="maybeboomer"></p>
+    <img src="https://github.com/smorter-than-you/smorter-than-you.github.io/blob/main/bad-game/turtol.jpg?raw=true" onclick="boomerize(); iteration = iteration + 1;">
+    <p id="maybeludvig"></p>
+    <p id="maybeelias"></p>
+    <p id="maybetore"></p>
   </body>
