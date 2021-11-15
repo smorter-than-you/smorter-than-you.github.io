@@ -6,18 +6,15 @@
   <script>
       let iteration = 0;
       function boomerize(thing) {
-        switch(thing)
-          case 0:
-            document.getElementById("maybeludvig").innerHTML = "Ludvig är en boomer";
-            break;
-          case 1:
-            document.getElementById("maybeelias").innerHTML = "Elias har en stor panna";
-            break;
-          case 2:
-            document.getElementById("maybetore").innerHTML = "Tore är en snögubbe";
-            break;
-          default:
-            alert("Du är färdig nu. Fortsätt om du vill");
+        if (thing === 0) {
+          document.getElementById("maybeludvig").innerHTML = "Ludvig är en boomer";
+        } else if (thing === 1) {
+          document.getElementById("maybeelias").innerHTML = "Elias har en stor panna";
+        } else if (thing === 2) {
+          document.getElementById("maybetore").innerHTML = "Tore är en snögubbe";
+        } else {
+          alert("Inget mer att se");
+        }
       }
   </script>
   <body>
