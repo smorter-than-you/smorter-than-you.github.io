@@ -2,22 +2,24 @@
 <html>
   <head>
     <title>Bad game</title>
-  </head>
   <script>
-      function boomerize() {
-        document.getElementById("maybeludvig").innerHTML = "Ludvig är en boomer";
-        document.getElementById("turtol").onclick = "pannaize()";
-      }
-    function pannaize() {
-      document.getElementById("maybeelias").innerHTML = "Elias har en stor panna";
-      document.getElementById("turtol").onclick = "snogubbize()";
-    }
-    function snogubbize() {
-      document.getElementById("maybetore").innerHTML = "Tore är en snögubbe";
+    let iteration = 0;
+    function boomerize(thing) {  
+      if (thing === 0) {
+          document.getElementById("maybeludvig").innerHTML = "Ludvig är en boomer";
+        } else if (thing === 1) {
+          document.getElementById("maybeelias").innerHTML = "Elias har en stor panna";
+        } else if (thing === 2) {
+          document.getElementById("maybetore").innerHTML = "Tore är en snögubbe";
+        } else {
+          alert("Inget mer att se");
+        }
     }
   </script>
+  </head>
   <body>
-    <img src="https://github.com/smorter-than-you/smorter-than-you.github.io/blob/main/bad-game/turtol.jpg?raw=true" onclick="boomerize()" id="turtol">
+    <img src="https://github.com/smorter-than-you/smorter-than-you.github.io/blob/main/bad-game/turtol.jpg?raw=true" onclick="boomerize(iteration);
+                                                                                                                              iteration = iteration + 1;">
     <p id="maybeludvig"></p>
     <p id="maybeelias"></p>
     <p id="maybetore"></p>
