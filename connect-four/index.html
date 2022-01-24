@@ -5,7 +5,16 @@
     <link rel="stylesheet" href="https://smorter-than-you.github.io/connect-four/style.css">
   </head>
   <body>
-    <div id="board">
+    <script>
+      const board = {
+        tiles: [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]];
+        move: function(column) {if(this.tiles[column][5] === 0){ for(let i = 0; i < 5; i++) {if(this.tiles[column][i] === 0) { this.tiles[column][i] = this.player; break;} } this.player = this.player + 1 % 2;} else { window.alert("Column full") } }
+      function initializeGame() {
+        
+      }
+    </script>
+    <button id="start-button" onclick="initializeGame()">Start</button>
+    <div id="boardDisplay">
       
     </div>
   </body>
