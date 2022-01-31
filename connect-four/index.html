@@ -10,7 +10,12 @@
         tiles: [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]];
         move: function(column) {if(this.tiles[column][5] === 0){ for(let i = 0; i < 5; i++) {if(this.tiles[column][i] === 0) { this.tiles[column][i] = this.player; break;} } this.player = this.player + 1 % 2;} else { window.alert("Column full") } }
       function initializeGame() {
-        
+        for(let i = 0; i < this.tiles.length - 1; i++) {
+          
+          for(let j = 0; j < this.tiles[i].length - 1; i++( {
+            
+          }
+        }
       }
     </script>
     <button id="start-button" onclick="initializeGame()">Start</button>
